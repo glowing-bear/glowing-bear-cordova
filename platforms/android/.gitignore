@@ -1,7 +1,7 @@
 .project
 ant-build
 ant-gen
-assets/
+assets/www/
 cordova/
 CordovaLib/
 platform_www/
