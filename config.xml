@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="de._4z2.glowingbear" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>glowing-bear</name>
+    <description>
+        IRC for the 21st century
+    </description>
+    <author email="dev@4z2.de" href="https://github.com/lorenzhs">
+        Lorenz Hübschle-Schneider
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>
