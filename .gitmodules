@@ -1,0 +1,4 @@
+[submodule "www"]
+	path = www
+	url = https://github.com/lorenzhs/glowing-bear.git
+	branch = cordova
