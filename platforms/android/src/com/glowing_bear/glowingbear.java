@@ -17,7 +17,7 @@
        under the License.
  */
 
-package de._4z2.glowingbear;
+package com.glowing_bear;
 
 import android.os.Bundle;
 import org.apache.cordova.*;
