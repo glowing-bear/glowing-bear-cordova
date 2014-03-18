@@ -8,5 +8,5 @@
         Lorenz Hübschle-Schneider
     </author>
     <content src="index.html" />
-    <access origin="*" />
+    <access origin="" />
 </widget>
