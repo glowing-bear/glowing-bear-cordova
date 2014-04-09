@@ -7,7 +7,7 @@ Native app for glowing-bear, the HTML5 irc client of the 21st century. Android, 
 Setup
 -----
 
-First, you need to get the glowing-bear submodule:
+After cloning this repository, you will need to get the glowing-bear submodule:
 
 `git submodule init && git submodule update`
 
@@ -21,7 +21,7 @@ Next, you need to have cordova generate all the necessary build files that aren'
 
 `cordova platform update android`
 
-Now you are ready to build! Type `cordova build` to build. Your apk file will end up in the
+Don't worry about the errors it will spew at you (if you insist on having them disappear, just run the command again. It won't change anything, but this time around, no errors should be found). Now you are ready to build! Type `cordova build` to build. Your apk file will end up in the
 `/platforms/android/ant-build/` folder.
 
 Some other commands you might want to have a look at are `cordova emulate` to build and install in an Android emulator instance, or `cordova run` to build and install onto a device (or an emulator). You can also have a look at http://www.ng-newsletter.com/posts/angular-on-mobile.html#native for some more information.
