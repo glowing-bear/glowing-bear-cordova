@@ -13,7 +13,7 @@
     <feature name="LocalNotification">
         <param name="android-package" value="de.appplant.cordova.plugin.localnotification.LocalNotification" />
     </feature>
-    <name>glowing-bear</name>
+    <name>Glowing Bear</name>
     <description>
         IRC for the 21st century
     </description>
