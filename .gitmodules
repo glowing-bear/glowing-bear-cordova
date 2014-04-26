@@ -1,4 +1,4 @@
 [submodule "www"]
 	path = www
-	url = https://github.com/lorenzhs/glowing-bear.git
+	url = https://github.com/glowing-bear/glowing-bear.git
 	branch = cordova
