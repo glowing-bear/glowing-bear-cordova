@@ -3,15 +3,16 @@ glowing-bear-cordova
 
 Native app for glowing-bear, the HTML5 irc client of the 21st century. Android, for now.
 
+You can install the developer preview from the Google Play Store [here](https://play.google.com/store/apps/details?id=com.glowing_bear)
 
-Setup
------
+Building
+--------
 
 After cloning this repository, you will need to get the glowing-bear submodule:
 
 `git submodule init && git submodule update`
 
-Secondly, check out the wonderful https://github.com/creationix/nvm if you don't know it already, it's highly recommended.
+Secondly, check out the wonderful [nvm](https://github.com/creationix/nvm) if you don't know it already, it's highly recommended.
 
 Then, install cordova:
 
