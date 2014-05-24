@@ -5,7 +5,7 @@
          It contains the path to the SDK. It should *NOT* be checked into
          Version Control Systems. -->
     <property file="local.properties" />
-    <property name="aapt.ignore.assets" value="!.svn:!.git:.*:&lt;dir&gt;_*:!CVS:!thumbs.db:!picasa.ini:!*.scc:*~:!bower_components" />
+    <property name="aapt.ignore.assets" value="!.svn:!.git:.*:&lt;dir&gt;_*:!CVS:!thumbs.db:!picasa.ini:!*.scc:*~:!bower_components:!bower.json:!manifest.*:!*.md" />
 
     <!-- The ant.properties file can be created by you. It is only edited by the
          'android' tool to add properties to it.
