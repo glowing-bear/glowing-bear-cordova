@@ -11,5 +11,15 @@
     <access origin="" />
 	<platform name="firefoxos">
 		<icon src="www/assets/img/glowing_bear_128x128.png" width="128" height="128" />
+        <icon src="www/assets/img/glowing_bear_90x90.png" width="90" height="90" />
+        <icon src="www/assets/img/glowing_bear_60x60.png" width="60" height="60" />
 	</platform>
+    <platform name="android">
+        <icon src="www/assets/img/glowing_bear_256x256.png" width="256" height="256" />
+        <icon src="www/assets/img/glowing_bear_128x128.png" width="128" height="128" />
+        <icon src="www/assets/img/glowing_bear_90x90.png" width="90" height="90" />
+        <icon src="www/assets/img/glowing_bear_60x60.png" width="60" height="60" />
+        <preference name="SplashScreen" value="splash" />
+        <preference name="SplashScreenDelay" value="5000" />
+    </platform>
 </widget>
