@@ -9,4 +9,7 @@
     </author>
     <content src="index.html" />
     <access origin="" />
+	<platform name="firefoxos">
+		<icon src="www/assets/img/glowing_bear_128x128.png" width="128" height="128" />
+	</platform>
 </widget>
