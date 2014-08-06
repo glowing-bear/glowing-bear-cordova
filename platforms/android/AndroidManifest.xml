@@ -3,7 +3,7 @@
     <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true" />
     <uses-permission android:name="android.permission.INTERNET" />
     <application android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name">
-        <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" android:label="@string/app_name" android:name="glowingbear" android:theme="@android:style/Theme.Black.NoTitleBar">
+        <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" android:label="@string/app_name" android:launchMode="singleTop" android:name="glowingbear" android:theme="@android:style/Theme.Black.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -17,7 +17,7 @@
         </receiver>
         <activity android:launchMode="singleInstance" android:name="de.appplant.cordova.plugin.localnotification.ReceiverActivity" />
     </application>
-    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="19" />
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="20" />
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 </manifest>
