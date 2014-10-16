@@ -14,7 +14,7 @@
 	</platform>
     <platform name="android">
         <icon src="icons/glowing_bear_192x192.png" density="xxxhdpi" />
-        <icon src="icons/glowing_bear_144x144.png" density="xxxhdpi" />
+        <icon src="icons/glowing_bear_144x144.png" density="xxhdpi" />
         <icon src="icons/glowing_bear_96x96.png" density="xhdpi" />
         <icon src="icons/glowing_bear_72x72.png" density="hdpi" />
         <icon src="icons/glowing_bear_48x48.png" density="mdpi" />

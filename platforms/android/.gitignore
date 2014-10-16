@@ -5,5 +5,7 @@ assets/www/
 cordova/
 CordovaLib/
 platform_www/
+res/*/icon.png
+res/*/ic_action_*.png
 out/
 local.properties

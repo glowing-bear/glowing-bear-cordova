@@ -15,7 +15,7 @@
         <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
     </feature>
     <icon density="xxxhdpi" src="icons/glowing_bear_192x192.png" />
-    <icon density="xxxhdpi" src="icons/glowing_bear_144x144.png" />
+    <icon density="xxhdpi" src="icons/glowing_bear_144x144.png" />
     <icon density="xhdpi" src="icons/glowing_bear_96x96.png" />
     <icon density="hdpi" src="icons/glowing_bear_72x72.png" />
     <icon density="mdpi" src="icons/glowing_bear_48x48.png" />
