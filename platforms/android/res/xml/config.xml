@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.glowing_bear" version="0.4.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.glowing_bear" version="0.4.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
@@ -9,6 +9,9 @@
     </feature>
     <feature name="SplashScreen">
         <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
     </feature>
     <icon density="xxxhdpi" src="icons/glowing_bear_192x192.png" />
     <icon density="xxhdpi" src="icons/glowing_bear_144x144.png" />
@@ -25,4 +28,5 @@
         Lorenz Hübschle-Schneider
     </author>
     <content src="index.html" />
+    <access origin="*" />
 </widget>

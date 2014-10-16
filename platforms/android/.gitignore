@@ -9,3 +9,4 @@ res/*/icon.png
 res/*/ic_action_*.png
 out/
 local.properties
+*.gradle
