@@ -10,15 +10,14 @@
     <content src="index.html" />
     <access origin="" />
 	<platform name="firefoxos">
-		<icon src="www/assets/img/glowing_bear_128x128.png" width="128" height="128" />
-        <icon src="www/assets/img/glowing_bear_90x90.png" width="90" height="90" />
-        <icon src="www/assets/img/glowing_bear_60x60.png" width="60" height="60" />
+        <icon src="icons/glowing_bear_60x60.png" width="60" height="60" />
 	</platform>
     <platform name="android">
-        <icon src="www/assets/img/glowing_bear_256x256.png" density="xhdpi" />
-        <icon src="www/assets/img/glowing_bear_128x128.png" density="hdpi" />
-        <icon src="www/assets/img/glowing_bear_90x90.png" density="mdpi" />
-        <icon src="www/assets/img/glowing_bear_60x60.png" density="ldpi" />
+        <icon src="icons/glowing_bear_192x192.png" density="xxxhdpi" />
+        <icon src="icons/glowing_bear_144x144.png" density="xxxhdpi" />
+        <icon src="icons/glowing_bear_96x96.png" density="xhdpi" />
+        <icon src="icons/glowing_bear_72x72.png" density="hdpi" />
+        <icon src="icons/glowing_bear_48x48.png" density="mdpi" />
         <preference name="SplashScreen" value="splash" />
         <preference name="SplashScreenDelay" value="5000" />
     </platform>
