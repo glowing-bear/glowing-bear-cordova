@@ -5,4 +5,5 @@ assets/www/
 cordova/
 CordovaLib/
 platform_www/
+out/
 local.properties

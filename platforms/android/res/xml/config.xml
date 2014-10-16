@@ -14,10 +14,10 @@
     <feature name="SplashScreen">
         <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
     </feature>
-    <icon height="256" src="www/assets/img/glowing_bear_256x256.png" width="256" />
-    <icon height="128" src="www/assets/img/glowing_bear_128x128.png" width="128" />
-    <icon height="90" src="www/assets/img/glowing_bear_90x90.png" width="90" />
-    <icon height="60" src="www/assets/img/glowing_bear_60x60.png" width="60" />
+    <icon density="xhdpi" src="www/assets/img/glowing_bear_256x256.png" />
+    <icon density="hdpi" src="www/assets/img/glowing_bear_128x128.png" />
+    <icon density="mdpi" src="www/assets/img/glowing_bear_90x90.png" />
+    <icon density="ldpi" src="www/assets/img/glowing_bear_60x60.png" />
     <preference name="SplashScreen" value="splash" />
     <preference name="SplashScreenDelay" value="5000" />
     <name>Glowing Bear</name>
