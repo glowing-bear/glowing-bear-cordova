@@ -3,3 +3,4 @@ build/
 cordova/
 platform_www/
 www/
+*.zip
