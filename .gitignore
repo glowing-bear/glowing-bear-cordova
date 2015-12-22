@@ -2,3 +2,8 @@ plugins
 *.sublime-*
 node_modules
 bower_components
+build/
+gradle/
+gradlew
+*-signing.properties
+*.gpg
