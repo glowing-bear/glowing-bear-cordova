@@ -28,7 +28,6 @@ Don't worry about the errors it will spew at you (if you insist on having them d
 Lastly you need to tell cordova about the plugins we use, and then you'll be ready to build!
 
 ```bash
-cordova plugin add cordova-plugin-device
 cordova plugin add cordova-plugin-inappbrowser
 cordova plugin add cordova-plugin-splashscreen
 cordova plugin add de.appplant.cordova.plugin.local-notification
