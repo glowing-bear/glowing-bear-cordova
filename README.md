@@ -62,7 +62,11 @@ First, add the platform:
 cordova platform add ios
 ```
 
+Then, install all the plugins listed above.
+
 Next, open the built `Glowing Bear.xcodeproj` in Xcode. You'll need to change the Bundle Identifier to something unique to get the code signing to work. Otherwise, the default Bundle Identifier will only work in the emulator. Then, follow the steps at http://bouk.co/blog/sideload-iphone/ to deploy it to your physical device.
+
+**Note:** As the Cordova build includes a copy of the GB source, it won't auto update. You'll need to update, recompile, and redeploy to get any new features of Glowing Bear.
 
 Generating Splash Screen / Icons
 --------------------------------
