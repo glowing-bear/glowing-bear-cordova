@@ -30,5 +30,4 @@
     </application>
     <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="21" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 </manifest>
