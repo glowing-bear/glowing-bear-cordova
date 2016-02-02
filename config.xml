@@ -20,5 +20,6 @@
         <icon src="icons/glowing_bear_48x48.png" density="mdpi" />
         <preference name="SplashScreen" value="splash" />
         <preference name="SplashScreenDelay" value="5000" />
+        <preference name="FadeSplashScreenDuration" value="500"/>
     </platform>
 </widget>

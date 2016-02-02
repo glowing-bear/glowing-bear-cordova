@@ -13,7 +13,7 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"LocalNotification\"><param name=\"android-package\" value=\"de.appplant.cordova.plugin.localnotification.LocalNotification\" /></feature>",
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         },
                         {
@@ -21,7 +21,7 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "xml": "<feature name=\"LocalNotification\"><param name=\"android-package\" value=\"de.appplant.cordova.plugin.localnotification.LocalNotification\" /></feature>",
                             "count": 1
                         },
                         {
@@ -81,13 +81,16 @@
         "cordova-plugin-device": {
             "PACKAGE_NAME": "com.glowing_bear"
         },
-        "de.appplant.cordova.plugin.local-notification": {
+        "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.glowing_bear"
         },
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.glowing_bear"
         },
-        "cordova-plugin-splashscreen": {
+        "cordova-plugin-app-event": {
+            "PACKAGE_NAME": "com.glowing_bear"
+        },
+        "de.appplant.cordova.plugin.local-notification": {
             "PACKAGE_NAME": "com.glowing_bear"
         },
         "com.jamiestarke.webviewdebug": {
@@ -102,6 +105,23 @@
             "pluginId": "cordova-plugin-device",
             "clobbers": [
                 "device"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+            "id": "cordova-plugin-splashscreen.SplashScreen",
+            "pluginId": "cordova-plugin-splashscreen",
+            "clobbers": [
+                "navigator.splashscreen"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+            "id": "cordova-plugin-inappbrowser.inappbrowser",
+            "pluginId": "cordova-plugin-inappbrowser",
+            "clobbers": [
+                "cordova.InAppBrowser.open",
+                "window.open"
             ]
         },
         {
@@ -130,30 +150,14 @@
                 "cordova.plugins.notification.local.core",
                 "plugin.notification.local.core"
             ]
-        },
-        {
-            "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
-            "id": "cordova-plugin-inappbrowser.inappbrowser",
-            "pluginId": "cordova-plugin-inappbrowser",
-            "clobbers": [
-                "cordova.InAppBrowser.open",
-                "window.open"
-            ]
-        },
-        {
-            "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
-            "id": "cordova-plugin-splashscreen.SplashScreen",
-            "pluginId": "cordova-plugin-splashscreen",
-            "clobbers": [
-                "navigator.splashscreen"
-            ]
         }
     ],
     "plugin_metadata": {
-        "cordova-plugin-device": "1.1.0",
-        "de.appplant.cordova.plugin.local-notification": "0.8.2",
-        "cordova-plugin-inappbrowser": "1.1.1",
-        "cordova-plugin-splashscreen": "3.0.0",
+        "cordova-plugin-device": "1.1.1",
+        "cordova-plugin-splashscreen": "3.1.0",
+        "cordova-plugin-inappbrowser": "1.2.0",
+        "cordova-plugin-app-event": "1.1.0",
+        "de.appplant.cordova.plugin.local-notification": "0.8.4",
         "com.jamiestarke.webviewdebug": "1.0.8"
     }
 }
