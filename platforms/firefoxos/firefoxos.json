@@ -164,7 +164,7 @@
         "cordova-plugin-device": "1.1.1",
         "cordova-plugin-splashscreen": "3.1.0",
         "cordova-plugin-inappbrowser": "1.2.0",
-        "cordova-plugin-app-event": "1.1.0",
+        "cordova-plugin-app-event": "1.2.0",
         "de.appplant.cordova.plugin.local-notification": "0.8.4",
         "com.jamiestarke.webviewdebug": "1.0.8"
     }
