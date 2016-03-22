@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="504" id="com.glowing_bear" version="0.5.3-b2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.glowing_bear" version="0.6.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
-    <feature name="LocalNotification">
-        <param name="android-package" value="de.appplant.cordova.plugin.localnotification.LocalNotification" />
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
     </feature>
     <feature name="InAppBrowser">
         <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
     </feature>
-    <feature name="SplashScreen">
-        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
-        <param name="onload" value="true" />
+    <feature name="LocalNotification">
+        <param name="android-package" value="de.appplant.cordova.plugin.localnotification.LocalNotification" />
     </feature>
     <feature name="WebViewDebug">
         <param name="android-package" value="com.jamiestarke.webviewdebug.WebViewDebug" />
@@ -25,6 +25,7 @@
     <icon density="mdpi" src="icons/glowing_bear_48x48.png" />
     <preference name="SplashScreen" value="splash" />
     <preference name="SplashScreenDelay" value="5000" />
+    <preference name="FadeSplashScreenDuration" value="500" />
     <name>Glowing Bear</name>
     <description>
         IRC for the 21st century

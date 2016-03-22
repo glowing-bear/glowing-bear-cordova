@@ -13,7 +13,7 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"LocalNotification\"><param name=\"android-package\" value=\"de.appplant.cordova.plugin.localnotification.LocalNotification\" /></feature>",
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         },
                         {
@@ -21,7 +21,7 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "xml": "<feature name=\"LocalNotification\"><param name=\"android-package\" value=\"de.appplant.cordova.plugin.localnotification.LocalNotification\" /></feature>",
                             "count": 1
                         },
                         {
@@ -67,10 +67,6 @@
                         {
                             "xml": "<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\" />",
                             "count": 1
-                        },
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
-                            "count": 1
                         }
                     ]
                 }
@@ -81,13 +77,16 @@
         "cordova-plugin-device": {
             "PACKAGE_NAME": "com.glowing_bear"
         },
-        "de.appplant.cordova.plugin.local-notification": {
+        "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.glowing_bear"
         },
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.glowing_bear"
         },
-        "cordova-plugin-splashscreen": {
+        "cordova-plugin-app-event": {
+            "PACKAGE_NAME": "com.glowing_bear"
+        },
+        "de.appplant.cordova.plugin.local-notification": {
             "PACKAGE_NAME": "com.glowing_bear"
         },
         "com.jamiestarke.webviewdebug": {
@@ -105,30 +104,11 @@
             ]
         },
         {
-            "file": "plugins/de.appplant.cordova.plugin.local-notification/www/local-notification.js",
-            "id": "de.appplant.cordova.plugin.local-notification.LocalNotification",
-            "pluginId": "de.appplant.cordova.plugin.local-notification",
+            "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+            "id": "cordova-plugin-splashscreen.SplashScreen",
+            "pluginId": "cordova-plugin-splashscreen",
             "clobbers": [
-                "cordova.plugins.notification.local",
-                "plugin.notification.local"
-            ]
-        },
-        {
-            "file": "plugins/de.appplant.cordova.plugin.local-notification/www/local-notification-core.js",
-            "id": "de.appplant.cordova.plugin.local-notification.LocalNotification.Core",
-            "pluginId": "de.appplant.cordova.plugin.local-notification",
-            "clobbers": [
-                "cordova.plugins.notification.local.core",
-                "plugin.notification.local.core"
-            ]
-        },
-        {
-            "file": "plugins/de.appplant.cordova.plugin.local-notification/www/local-notification-util.js",
-            "id": "de.appplant.cordova.plugin.local-notification.LocalNotification.Util",
-            "pluginId": "de.appplant.cordova.plugin.local-notification",
-            "merges": [
-                "cordova.plugins.notification.local.core",
-                "plugin.notification.local.core"
+                "navigator.splashscreen"
             ]
         },
         {
@@ -141,19 +121,36 @@
             ]
         },
         {
-            "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
-            "id": "cordova-plugin-splashscreen.SplashScreen",
-            "pluginId": "cordova-plugin-splashscreen",
+            "file": "plugins/de.appplant.cordova.plugin.local-notification/www/local-notification.js",
+            "id": "de.appplant.cordova.plugin.local-notification.LocalNotification",
             "clobbers": [
-                "navigator.splashscreen"
+                "cordova.plugins.notification.local",
+                "plugin.notification.local"
+            ]
+        },
+        {
+            "file": "plugins/de.appplant.cordova.plugin.local-notification/www/local-notification-core.js",
+            "id": "de.appplant.cordova.plugin.local-notification.LocalNotification.Core",
+            "clobbers": [
+                "cordova.plugins.notification.local.core",
+                "plugin.notification.local.core"
+            ]
+        },
+        {
+            "file": "plugins/de.appplant.cordova.plugin.local-notification/www/local-notification-util.js",
+            "id": "de.appplant.cordova.plugin.local-notification.LocalNotification.Util",
+            "merges": [
+                "cordova.plugins.notification.local.core",
+                "plugin.notification.local.core"
             ]
         }
     ],
     "plugin_metadata": {
-        "cordova-plugin-device": "1.1.0",
-        "de.appplant.cordova.plugin.local-notification": "0.8.2",
-        "cordova-plugin-inappbrowser": "1.1.1",
-        "cordova-plugin-splashscreen": "3.0.0",
+        "cordova-plugin-device": "1.1.1",
+        "cordova-plugin-splashscreen": "3.1.0",
+        "cordova-plugin-inappbrowser": "1.2.0",
+        "cordova-plugin-app-event": "1.1.0",
+        "de.appplant.cordova.plugin.local-notification": "0.8.4",
         "com.jamiestarke.webviewdebug": "1.0.8"
     }
 }
