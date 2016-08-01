@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.glowing_bear" version="0.6.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.glowing_bear" ios-CFBundleIdentifier="org.glowing-bear" version="0.6.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Glowing Bear</name>
     <description>
         IRC for the 21st century
@@ -21,5 +21,45 @@
         <preference name="SplashScreen" value="splash" />
         <preference name="SplashScreenDelay" value="5000" />
         <preference name="FadeSplashScreenDuration" value="500"/>
+    </platform>
+    <platform name="ios">
+        <icon src="icon.png" />
+
+        <icon gap:platform="ios" height="180" src="res/icons/ios/icon-60-3x.png" width="180" />
+        <icon gap:platform="ios" height="60" src="res/icons/ios/icon-60.png" width="60" />
+        <icon gap:platform="ios" height="120" src="res/icons/ios/icon-60-2x.png" width="120" />
+        <icon gap:platform="ios" height="76" src="res/icons/ios/icon-76.png" width="76" />
+        <icon gap:platform="ios" height="152" src="res/icons/ios/icon-76-2x.png" width="152" />
+        <icon gap:platform="ios" height="40" src="res/icons/ios/icon-40.png" width="40" />
+        <icon gap:platform="ios" height="80" src="res/icons/ios/icon-40-2x.png" width="80" />
+        <icon gap:platform="ios" height="57" src="res/icons/ios/icon-57.png" width="57" />
+        <icon gap:platform="ios" height="114" src="res/icons/ios/icon-57-2x.png" width="114" />
+        <icon gap:platform="ios" height="72" src="res/icons/ios/icon-72.png" width="72" />
+        <icon gap:platform="ios" height="144" src="res/icons/ios/icon-72-2x.png" width="144" />
+        <icon gap:platform="ios" height="29" src="res/icons/ios/icon-small.png" width="29" />
+        <icon gap:platform="ios" height="58" src="res/icons/ios/icon-small-2x.png" width="58" />
+        <icon gap:platform="ios" height="50" src="res/icons/ios/icon-50.png" width="50" />
+        <icon gap:platform="ios" height="100" src="res/icons/ios/icon-50-2x.png" width="100" />
+
+        <splash src="main.png" />
+
+        <splash gap:platform="ios" height="480" src="res/screens/ios/screen-iphone-portrait.png" width="320" />
+        <splash gap:platform="ios" height="960" src="res/screens/ios/screen-iphone-portrait-2x.png" width="640" />
+        <splash gap:platform="ios" height="1024" src="res/screens/ios/screen-ipad-portrait.png" width="768" />
+        <splash gap:platform="ios" height="2048" src="res/screens/ios/screen-ipad-portrait-2x.png" width="1536" />
+        <splash gap:platform="ios" height="768" src="res/screens/ios/screen-ipad-landscape.png" width="1024" />
+        <splash gap:platform="ios" height="1536" src="res/screens/ios/screen-ipad-landscape-2x.png" width="2048" />
+        <splash gap:platform="ios" height="1136" src="res/screens/ios/screen-iphone-568h-2x.png" width="640" />
+        <splash gap:platform="ios" height="1334" src="res/screens/ios/screen-iphone-portrait-667h.png" width="750" />
+        <splash gap:platform="ios" height="2208" src="res/screens/ios/screen-iphone-portrait-736h.png" width="1242" />
+        <splash gap:platform="ios" height="1242" src="res/screens/ios/screen-iphone-landscape-736h.png" width="2208" />
+
+
+
+      <preference name="StatusBarOverlaysWebView" value="false" />
+      <preference name="StatusBarBackgroundColor" value="#000000" />
+      <preference name="StatusBarStyle" value="lightcontent" />
+
+
     </platform>
 </widget>
