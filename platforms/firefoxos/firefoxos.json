@@ -46,6 +46,9 @@
         "de.appplant.cordova.plugin.local-notification": {
             "PACKAGE_NAME": "com.glowing_bear"
         },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.glowing_bear"
+        },
         "com.jamiestarke.webviewdebug": {
             "PACKAGE_NAME": "com.glowing_bear"
         }
@@ -155,17 +158,26 @@
                 "cordova.plugins.notification.local.core",
                 "plugin.notification.local.core"
             ]
+        },
+        {
+            "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+            "id": "cordova-plugin-statusbar.statusbar",
+            "pluginId": "cordova-plugin-statusbar",
+            "clobbers": [
+                "window.StatusBar"
+            ]
         }
     ],
     "plugin_metadata": {
         "org.apache.cordova.splashscreen": "0.3.4",
         "org.apache.cordova.inappbrowser": "0.5.3",
         "org.apache.cordova.device": "0.2.12",
-        "cordova-plugin-device": "1.1.1",
-        "cordova-plugin-splashscreen": "3.1.0",
-        "cordova-plugin-inappbrowser": "1.2.0",
+        "cordova-plugin-inappbrowser": "1.5.0",
+        "cordova-plugin-splashscreen": "4.0.0",
+        "cordova-plugin-device": "1.1.3",
         "cordova-plugin-app-event": "1.2.0",
         "de.appplant.cordova.plugin.local-notification": "0.8.4",
+        "cordova-plugin-statusbar": "2.2.0",
         "com.jamiestarke.webviewdebug": "1.0.8"
     }
 }

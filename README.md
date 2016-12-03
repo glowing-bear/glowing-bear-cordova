@@ -89,4 +89,4 @@ See the documentation for `splashicon-generator` at https://github.com/eberlitz/
 Debugging
 ---------
 
-If you want to attach the browser's debugger, you need to tell Cordova to enable debugging. Do so with `cordova plugin add com.jamiestarke.webviewdebug`
+If you want to attach the browser's debugger, you need to tell Cordova to enable debugging. Do so with `cordova plugin add https://github.com/jrstarke/webview-debug`
