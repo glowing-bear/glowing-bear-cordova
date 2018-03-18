@@ -1,6 +1,0 @@
-config.xml
-build/
-cordova/
-platform_www/
-www/
-*.zip

@@ -8,9 +8,6 @@
         Lorenz Hübschle-Schneider
     </author>
     <content src="index.html" />
-	<platform name="firefoxos">
-        <icon src="icons/glowing_bear_60x60.png" width="60" height="60" />
-	</platform>
     <access origin="*" />
     <platform name="android">
         <icon src="icons/glowing_bear_192x192.png" density="xxxhdpi" />
