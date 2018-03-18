@@ -1,4 +1,5 @@
 plugins
+platforms/
 *.sublime-*
 node_modules
 bower_components
@@ -7,3 +8,4 @@ gradle/
 gradlew
 *-signing.properties
 *.gpg
+build.json

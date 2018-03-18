@@ -1,12 +1,14 @@
-.project
+# Non-project-specific build files:
+build.xml
+local.properties
+/gradlew
+/gradlew.bat
+/gradle
+# Ant builds
 ant-build
 ant-gen
-assets/www/
-cordova/
-CordovaLib/
-platform_www/
-res/*/icon.png
-res/*/ic_action_*.png
-out/
-local.properties
-*.gradle
+# Eclipse builds
+gen
+out
+# Gradle builds
+/build
