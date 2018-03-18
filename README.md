@@ -3,7 +3,7 @@ glowing-bear-cordova
 
 Native app for glowing-bear, the HTML5 irc client of the 21st century.
 
-Supports Android, Firefox OS, and iOS (self-deploy only).
+Supports Android and iOS (self-deploy only).
 
 You can install the developer preview from the Google Play Store [here](https://play.google.com/store/apps/details?id=com.glowing_bear).
 
@@ -23,37 +23,26 @@ Then, install cordova:
 Next, you need to have cordova generate all the necessary build files that aren't checked into git:
 
 ```bash
-cordova platform update android
-cordova platform update firefoxos
+cordova platform add android
 ```
 
-Don't worry about the errors it will spew at you (if you insist on having them disappear, just run the command again. It won't change anything, but this time around, no errors should be found).
-
-Lastly you need to tell cordova about the plugins we use, and then you'll be ready to build!
+Lastly you need to tell cordova to get all of the plugins we use, and then you'll be ready to build!
 
 ```bash
-cordova plugin add cordova-plugin-inappbrowser
-cordova plugin add cordova-plugin-splashscreen
-cordova plugin add de.appplant.cordova.plugin.local-notification
-cordova plugin add cordova-plugin-statusbar
+cordova plugin restore
 ```
 
 Building for Android
 --------------------
 
 Type `cordova build android` to build. Your apk file will end up in the
-`/platforms/android/build/outputs/apk/` folder.
+`/platforms/android/build/outputs/apk/debug` folder.
 
 Some other commands you might want to have a look at are `cordova emulate` to build and install in an Android emulator instance, or `cordova run` to build and install onto a device (or an emulator). You can also have a look at http://www.ng-newsletter.com/posts/angular-on-mobile.html#native for some more information.
 
-Building for FirefoxOS
-----------------------
-
-As FirefoxOS apps are pure web apps, a simple `cordova prepare firefoxos` suffices to copy all the necessary files to the correct places. You can then point your Firefox to `about:app-manager` and add `platforms/firefoxos/www` as a packaged app. Done! If you want to learn more, https://hacks.mozilla.org/2014/02/building-cordova-apps-for-firefox-os/ is a great starting point.
-
 Building for iOS
 ----------------
-Due to licensing issues, Glowing Bear can't be published on Apple's App store. Fortunately, you can self-deploy apps to your phone for free (!) as of iOS 9 / Xcode 7.
+Due to licensing issues, Glowing Bear (probably) can't be published on Apple's App store. Fortunately, you can self-deploy apps to your phone for free (!) as of iOS 9 / Xcode 7.
 
 First, add the platform:
 
@@ -61,9 +50,9 @@ First, add the platform:
 cordova platform add ios
 ```
 
-Then, install all the plugins listed above.
+Then install all the plugins with `cordova plugin restore` as above.
 
-Next, open the built `Glowing Bear.xcodeproj` in Xcode. You'll need to change the Bundle Identifier to something unique to get the code signing to work. Otherwise, the default Bundle Identifier will only work in the emulator. Then, follow the steps at http://bouk.co/blog/sideload-iphone/ to deploy it to your physical device.
+Next, open the generated `Glowing Bear.xcodeproj` in Xcode. You'll need to change the Bundle Identifier to something unique to get the code signing to work. Otherwise, the default Bundle Identifier will only work in the emulator. Then, follow the steps at http://bouk.co/blog/sideload-iphone/ to deploy it to your physical device.
 
 **Note:** As the Cordova build includes a copy of the GB source, it won't auto update. You'll need to update, recompile, and redeploy to get any new features of Glowing Bear.
 
@@ -89,4 +78,4 @@ See the documentation for `splashicon-generator` at https://github.com/eberlitz/
 Debugging
 ---------
 
-If you want to attach the browser's debugger, you need to tell Cordova to enable debugging. Do so with `cordova plugin add https://github.com/jrstarke/webview-debug`
+You should be able to debug a connected Android device or a running emulator using [Chrome's Remote Debugging feature](https://developers.google.com/chrome-developer-tools/docs/remote-debugging).
